@@ -1,0 +1,9 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "integrationFolder": "cypress/e2e",
+    "viewportHeight": 812,
+    "viewportWidth": 375,
+    "env": {
+      "VUE_APP_SHOPIFY_STOREFRONT_API_KEY": "6768e61560abf2bdb0370ff492afd04a"
+    }
+  }

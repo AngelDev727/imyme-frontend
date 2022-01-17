@@ -1,0 +1,101 @@
+.face-large > svg {
+    margin: -5% 6% -10% 6%;
+    
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        margin: -5% 0% -5% 0%;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        margin: -5% 5% -5% 5%;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        margin: -5% 14% -5% 14%;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        margin: -5% 12% -5% 12%;
+    }
+}
+
+.face-small > svg {
+    margin: -5% -15% -20% -15%;
+
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        margin: -5% -25% -15% -25%;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        margin: -10% -25% -20% -25%;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        margin: -8% -12% -18% -12%;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        margin: -10% -15% -20% -15%;
+    }
+}
+
+.face-smaller > svg {
+    margin: -10% -15% -23% -15%;
+
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        margin: -10% -25% -25% -25%;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        margin: -10% -20% -20% -20%;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        margin: -8% -6% -18% -6%;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        margin: -10% -10% -20% -10%;
+    }
+}
+
+.food {
+    height: 2.8em;    
+
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        height: 3.6em;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        height: 4em;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        height: 3.2em;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        height: 4.5em;
+    }
+}
+
+.sport {
+    height: 5em;
+
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        height: 7em;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        height: 8em;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        height: 6em;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        height: 8em;
+    }
+}
+
+.question-top-icon {
+    width: 38%;
+
+    @media only screen and (min-width: $bp-i-phone-6-to-10) {
+        width: 50%;
+    }
+    @media only screen and (min-width: $bp-i-phone-plus-models) {
+        width: 60%;
+    }
+    @media only screen and (min-width: $bp-i-pad-mini) {
+        width: 40%;
+    }
+    @media only screen and (min-width: $bp-i-pad-pro-105inch) {
+        width: 50%;
+    }
+}

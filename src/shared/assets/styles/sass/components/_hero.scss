@@ -1,0 +1,202 @@
+.hero {
+    position: relative;
+    height: 130vw;
+
+    @media only screen and (min-width: $bp-largest) {
+        height: 80vh;
+    }
+
+    &--img {
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    &--img__1 {
+        background-image: url(../../images/resized/atari_imyme_kv_a.jpg);
+        background-size: 210%;
+        object-fit: none;
+        background-position: 50% 100%;
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            background-image: url(../../../../shared/assets/images/atari_imyme_kv_a.jpg);
+        }
+        @media only screen and (min-width: $bp-largest) {
+            background-size: 100%;
+        }
+    }
+
+    &--img__2 {
+        background-image: url(../../images/resized/atari_imyme_oth_analyze.jpg);
+        background-size: 150%;
+        object-fit: none;
+        object-position: 50% 50%;
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            background-image: url(../../images/atari_imyme_kv_b.jpg);
+        }
+        @media only screen and (min-width: $bp-largest) {
+            background-size: 110%;
+        }
+    }
+
+    &--img__3 {
+        background-image: url(../../images/resized/atari_imyme_kv_c.jpg);
+        background-size: 200%;
+        object-fit: none;
+        object-position: 50% 50%;
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            background-image: url(../../images/atari_imyme_kv_c.jpg);
+            background-position: 50% 40%;
+        }
+        @media only screen and (min-width: $bp-largest) {
+            background-size: 90%;
+            background-position: 50% 50%;
+        }
+    }
+
+    &--img__5 {
+        background-image: url(../../images/Subscriptions/header_subscriptions.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% top;
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            background-image: url(../../images/Subscriptions/header_subscriptions_pc.jpg);
+            background-position: center center;
+        }
+
+        .svg-text {
+            text-align: center;
+            img {
+                width: 80vw;
+                @media only screen and (min-width: $bp-i-pad-mini) {
+                    max-width: 560px;
+                }
+            }
+        }
+    }
+
+    &--text {
+        color: $color-black;
+
+        &.slide-a {
+            padding-top: 2em;
+            width: 75%;
+            font-size: 6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            line-height: 1.3em;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        &.slide-b {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-weight: 500;
+            font-size: 3.5em;
+
+            > .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffb8be80;
+                width: fit-content;
+                height: fit-content;
+                padding: 1em 0;
+            }
+
+            u {
+                text-decoration: none;
+                border-bottom: 3px solid;
+            }
+        }
+
+        &.slide-c {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85%;
+            font-size: 2.5em;
+            font-weight: 500;
+
+            .heading {
+                font-size: 4em;
+                line-height: 0.6em;
+            }
+        }
+
+        &.slide-d {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            line-height: 2em;
+            font-weight: 500;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &-icon-container {
+        height: 85vh;
+        font-size: 4.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.dots {
+    position: relative;
+    bottom: 30px;
+    height: 20px;
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid $color-black;
+        margin: 0 0.75%;
+        display: inline-block;
+    }
+
+    .dot-active {
+        width: 8px;
+        height: 8px;
+        background-color: $color-black;
+        border-radius: 50%;
+        border: 1px solid $color-black;
+        margin: 0 0.75%;
+        display: inline-block;
+    }
+}
+
+.imyme-icon-text {
+    position: absolute;
+    top: -8%;
+    width: 120%;
+    height: 120%;
+    // margin: -58%;
+    // margin-bottom: -68%;
+    overflow: hidden;
+
+    @media only screen and (min-width: $bp-largest) {
+        // height: 120%;
+        // margin-top: -80%;
+        // margin-bottom: -80%;
+        // margin: 0;
+        // position: absolute;
+        top: -5%;
+    }
+}

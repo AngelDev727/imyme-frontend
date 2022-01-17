@@ -1,0 +1,58 @@
+.life-balance-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.life-balance-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .name {
+        width: 20%
+    }
+
+    .advice {
+        width: 60%;
+        font-size: 1.6rem;
+        padding: .3rem;
+        background-color: #FCD2D7;
+
+        .number {
+            font-size: 1.8rem;
+            display: inline-block;
+            width: 5%;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        &_tablet{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// .life-balance__tablet {
+//     margin-left: .5em;
+// }
+
+@media only screen and (min-width: $bp-largest){
+
+    .life-balance-container {
+        display: flex;
+    }
+
+    .life-balance-container>* {
+        width: 100%;
+    }
+}
+
+.life-balance-chart-container{
+    max-height:300px;
+    height: 70vw;
+
+    @media only screen and (min-width: $bp-largest){
+        width: 100%;
+        height: 300px;
+    }
+}

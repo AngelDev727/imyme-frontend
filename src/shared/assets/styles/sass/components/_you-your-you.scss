@@ -1,0 +1,101 @@
+// .you-your-you-section {
+//     position: relative;
+//     background-color: #fff;
+// }
+
+// .you-your-you-content {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);    
+//     color: #fff;
+//     z-index: 2;
+//     pointer-events:none;
+// }
+
+// .you-your-you-bg {
+//     display: grid;
+//     justify-content: center;
+//     align-content: center;
+//     grid-auto-flow: row;
+//     grid-template-columns: repeat(3 ,minmax(50px, 150px)); 
+//     grid-template-rows: repeat(3 ,1fr); 
+//     grid-template-areas: 
+//     "cell-0 cell-1 cell-2"
+//     "cell-3 cell-4 cell-5"
+//     "cell-6 cell-7 cell-8";
+//     grid-auto-flow: dense;
+
+//     background-color: $color-social;
+
+//     :nth-child(3),
+//     :nth-child(5),
+//     :nth-child(7),{
+//         background-color: $color-white;
+//     }
+
+//     > * {
+//         overflow: hidden;
+//     }
+    
+// }
+
+
+
+// .you-your-you-bg::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: rgba(0, 0, 0, .25);
+//     z-index: 1;
+//     pointer-events:none;
+//     /* margin-left: 1rem;
+//     margin-right: 1rem; */
+// }
+
+// .you-your-you-img {
+//     width: 100%;
+//     margin-bottom: -.2rem;
+//     transition: transform .5s ease;
+//     transform-origin: center;
+//     transform: scale(1.14);
+
+//     &:hover {
+//         transform: scale(1.07)
+//     }
+// }
+
+
+// .cell-img-0, .cell-1 {
+//     grid-area: cell-1;
+//     > img {
+//         cursor: pointer;
+//     }
+// }
+// .cell-img-1, .cell-3 {
+//     grid-area: cell-3;
+//     > img {
+//         cursor: pointer;
+//     }
+// }
+// .cell-img-2, .cell-5 {
+//     grid-area: cell-5;
+//     > img {
+//         cursor: pointer;
+//     }
+// }
+// .cell-img-3, .cell-6 {
+//     grid-area: cell-6;
+//     > img {
+//         cursor: pointer;
+//     }
+// }
+// .cell-img-4, .cell-7 {
+//     grid-area: cell-7;
+//     > img {
+//         cursor: pointer;
+//     }
+// }

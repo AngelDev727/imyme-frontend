@@ -1,0 +1,97 @@
+.subscription--item {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    padding: 1rem;
+    background-color: white;
+}
+
+.subscription--explaination {
+    width: 70%;
+}
+
+.unsubscribe-header {
+    font-size: 1.6em;
+}
+.unsubscribe-form {
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.unsubscribe-confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.unsubscribe-confirm-text {
+    line-height: 1.5em;
+    font-size: 2.3em;
+}
+
+.subscription-promotion-container {
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    // margin: -1rem -1rem -1rem auto;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.subscription-promotion-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgba(255, 0, 0, 0.25);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 6;
+}
+
+.subscription-promotion-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.2) 50%,
+        rgba(255, 0, 0, 0.1) 50%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+}
+
+.subscription-promotion-text > div {
+    font-size: 3rem;
+
+    @media only screen and (min-width: $bp-largest){
+        font-size: 4rem;
+    }
+}
+
+.subscription-promotion-bg-img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}

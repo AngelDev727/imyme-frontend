@@ -1,0 +1,40 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-gray;
+}
+
+.blog-header {
+    display: flex;
+    height: 14rem;
+}
+
+.blog-img{
+    height: 100%;
+    flex-basis: 40%;
+    object-fit: cover;
+    margin-bottom: -2px;
+    overflow: hidden;
+}
+
+.blog-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 60%;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blog-container>*{
+    flex: 1 100%;
+}
+
+.blog-artical-container{
+    flex: 1 1 500px;
+}

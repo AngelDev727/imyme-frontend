@@ -1,0 +1,19 @@
+#q-and-a {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#q-and-a > * {
+    @media only screen and(min-width: $bp-largest){
+        flex: 1 1 50%;
+    }
+}
+
+.q-and-a-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 25em;
+    margin: auto;
+}

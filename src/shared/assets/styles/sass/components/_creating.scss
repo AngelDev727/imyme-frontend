@@ -1,0 +1,43 @@
+.creating{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.creating > :nth-child(1){
+    position: absolute;
+    left: 50%;
+    animation: fall 5s -5s linear infinite;
+}
+
+.creating > :nth-child(2){
+    position: absolute;
+    left: 45%;
+    animation: fall 5s -4s linear infinite;
+}
+
+.creating > :nth-child(3){
+    position: absolute;
+    left: 50%;
+    animation: fall 5s -3s linear infinite;
+}
+
+.creating > :nth-child(4){
+    position: absolute;
+    left: 45%;
+    animation: fall 5s -2s linear infinite;
+}
+
+.creating > :nth-child(5){
+    position: absolute;
+    left: 40%;
+    animation: fall 5s -0.5s linear infinite;
+}
+
+@keyframes fall {
+    0%  {top: -20%}
+    100%{top: 100%}
+}

@@ -1,0 +1,236 @@
+.animation {
+    &--section{
+        position: fixed;
+        z-index: 995;
+        transition: opacity 100ms linear, visibility 50ms linear 100ms;
+        
+
+        &__full{
+            height: 100vh;
+            width: 100vw;
+            top:0;
+            left:0;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &__hide{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &--splash{
+        position: relative;
+        height: 30%;
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: splash 1s infinite;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes splash {
+    0%{top: 5%; opacity: 0}
+    90%{top: 35%; opacity: .5}
+    100%{top: 35%; opacity: 0}
+
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+.fade-long-enter-active,
+.fade-long-leave-active {
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fade-long-enter,
+.fade-long-leave-active {
+  opacity: 0
+}
+
+.pop-enter-active,
+.pop-leave-active {
+  transition-duration: .3s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+  pointer-events: none;
+}
+
+.pop-enter,
+.pop-leave-active {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+    transition-duration: 0.5s;
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+    opacity: 0;
+    transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+    opacity: 0;
+    transform: translate(-2em, 0);
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+    animation-delay: 0.1s;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: zoom;
+    pointer-events: none;
+}
+
+.zoom-leave-active {
+    animation-direction: reverse;
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+    transition-duration: 0.7s;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fade-in-enter {
+    opacity: 0;
+}
+
+.fade-in-leave-active {
+    opacity: 0;
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.staggered-fade {
+    opacity: 0;
+    margin-top: 15px;
+    transition: opacity 0.4s ease-in, margin-top 0.5s ease-out;
+    /* transform: translateY(15px);
+    transition: opacity 0.4s ease-in, transform 0.5s ease-out; */
+}
+
+.staggered-fade * {
+    animation-delay: inherit !important;
+    animation-play-state: paused !important;
+}
+
+.staggered-fade-enter-to {
+    opacity: 1;
+    margin-top: 0px;
+    /* transform: translateY(0px); */
+}
+
+.staggered-fade-enter-to * {
+    animation-play-state: running !important;
+}
+
+.staggered-fade-leave {
+    opacity: 0;
+}
+
+.grow-enter-active,
+.grow-leave-active {
+  transition-duration: .3s;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+  pointer-events: none;
+}
+
+.grow-enter,
+.grow-leave-active {
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+.clip-box {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+.top--img {
+    opacity: 0;
+    padding-top: 6rem;
+    transition: opacity 1.5s, padding-top 1.5s;
+}
+
+.icon-top-page{
+    transition: opacity 1s, transform 1s;
+}
+
+.top-section-transitions-1 {
+
+    &.top--img {
+        opacity: 1;
+        padding-top: 0rem;
+    }
+}
+
+.top-section-transitions-2 {
+
+    &.top--img {
+        opacity: 1;
+        padding-top: 0rem;
+    }
+}
+
+.top-section-transitions-3 {
+
+    &.top--img {
+        opacity: 1;
+        padding-top: 0rem;
+    }
+}

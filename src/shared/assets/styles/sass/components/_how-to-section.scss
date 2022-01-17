@@ -1,0 +1,105 @@
+.how-to-section {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+    
+    > div {
+        display: flex;
+        width: 280%;        // 90vw per step
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+}
+
+.scroll-bar{
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+
+.scroll-handel{
+    width: 33.333%;
+    height: 5px;
+    background-color: #999;
+    margin-top: -3px;
+    border-radius: 2rem;
+}
+
+.icon-container {
+    margin: auto;
+    width: 50%;
+}
+
+.how-to-icon {
+    display: inline-block;
+    stroke-width: 0.2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: currentColor;
+    fill: none;
+    width: 100%;
+    /* height: 100%; */
+    height: 200px;
+}
+
+.step-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.step-number {
+    font-size: 8em;
+    font-weight: 300;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid #ef95a1;
+    right: 50%;
+    transform: translate(50%, -5px);
+    z-index: 5;
+    @media only screen and (min-width: $bp-largest) {
+        right: 0%;
+        top:50%;
+        transform: translate(100%, -5px) rotate(-90deg)
+    }
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    width: 1px;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 60px solid #ef95a1;
+    z-index: 99;
+}
+
+.how-to-section-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.how-to-section-container>* {
+    position: relative;
+    width: 100%;
+    @media only screen and (min-width: $bp-largest) {
+    width: calc(33.333% - 4rem);
+    }
+}

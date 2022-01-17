@@ -1,0 +1,77 @@
+.stripe-input {
+    background-color: white;
+}
+
+.stripe-input .field.invalid {
+    box-shadow: 0 -2px #fa755a inset;
+}
+.stripe-input .field.complete {
+    box-shadow: 0 -2px #008b07 inset;
+}
+.stripe-input .empty {
+    box-shadow: 0 0px white inset !important;
+}
+
+.card-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: scale(0);
+    height: 4rem;
+
+    transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.card-type.display {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.cardCvc-help {
+    z-index: 205;
+    float: right;
+    height: 0;
+    position: relative;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.cardCvc-help-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    stroke-width: 1px;
+    stroke-linecap: butt;
+}
+
+.cardCvc-help-message {
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: 95% 120%;
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 1.5rem;
+    right: 1rem;
+    width: 25vw;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    transition: opacity 160ms ease, transform 160ms ease;
+}
+.cardCvc-help-message:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid black;
+    border-top: 1rem solid black;
+    border-bottom: 1rem solid transparent;
+    right: 1rem;
+    bottom: -1.6rem;
+}
+
+.cardCvc-help-message.display {
+    opacity: 1;
+    transform: scale(1);
+}

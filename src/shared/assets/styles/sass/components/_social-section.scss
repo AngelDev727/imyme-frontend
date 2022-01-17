@@ -1,0 +1,69 @@
+.link {
+    cursor: pointer;
+}
+
+.social-images-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.insta-pic {
+    width: 33.333%;
+}
+
+@supports (display: grid) {
+    .social-images-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        @media only screen and (min-width: $bp-i-pad-pro-129inch){
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+
+        @media only screen and (min-width: $bp-largest){
+            grid-template-columns: repeat(8, 1fr);
+        } 
+    }
+
+    .insta-pic {
+        width: 100%;
+    }
+}
+
+.insta-pic-1,
+.insta-pic-4,
+.insta-pic-7 {
+    grid-column-start: 3;
+}
+
+.insta-pic-2,
+.insta-pic-5,
+.insta-pic-8 {
+    grid-column-start: 2;
+}
+
+.insta-pic-3,
+.insta-pic-6,
+.insta-pic-9 {
+    grid-column-start: 1;
+}
+
+.insta-pic-1,
+.insta-pic-2,
+.insta-pic-3 {
+    grid-row-start: 3;
+}
+
+.insta-pic-4,
+.insta-pic-5,
+.insta-pic-6 {
+    grid-row-start: 2;
+}
+
+.insta-pic-7,
+.insta-pic-8,
+.insta-pic-9 {
+    grid-row-start: 1;
+}

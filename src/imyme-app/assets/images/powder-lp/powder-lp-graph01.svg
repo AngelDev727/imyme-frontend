@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="591.631" height="890.6" viewBox="0 0 591.631 890.6">
+  <g id="コンポーネント_31_1" data-name="コンポーネント 31 – 1" transform="translate(0.6 0.6)">
+    <rect id="長方形_2587" data-name="長方形 2587" width="56" height="56" transform="translate(58 658)" fill="#cdd7d8"/>
+    <rect id="長方形_2588" data-name="長方形 2588" width="56" height="56" transform="translate(58 746)" fill="#8cafb1"/>
+    <rect id="長方形_2589" data-name="長方形 2589" width="56" height="56" transform="translate(58 834)" fill="#87c2c4"/>
+    <text id="_2日に1回_12.5_" data-name="2日に1回  (12.5%)" transform="translate(170 670.5)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">2日に1回  (12.5%)</tspan></text>
+    <text id="週に2回_37.5_" data-name="週に2回  (37.5%)" transform="translate(168 758.5)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">週に2回  (37.5%)</tspan></text>
+    <text id="週に1回_50.0_" data-name="週に1回  (50.0%)" transform="translate(170 846.5)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">週に1回  (50.0%)</tspan></text>
+    <g id="グループ_456" data-name="グループ 456" transform="translate(-899.464 -107.768)">
+      <path id="パス_585" data-name="パス 585" d="M1332.964,245.723a295.57,295.57,0,0,1-130.156,245.159l-165.36-245.159Z" transform="translate(156.931 156.898)" fill="#87c2c4" stroke="#87c2c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_586" data-name="パス 586" d="M1332.964,402.621c0-163.043-132.473-294.853-295.516-294.853V402.621Z" transform="translate(156.931)" fill="#87c2c4" stroke="#87c2c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_587" data-name="パス 587" d="M899.464,402.982a294.285,294.285,0,0,0,23.2,114.915l271.715-115.276V107.768C1031.336,107.768,899.464,239.94,899.464,402.982Z" transform="translate(0)" fill="#8cafb1" stroke="#8cafb1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_588" data-name="パス 588" d="M910.319,361a295.715,295.715,0,0,0,63.269,93.839l208.446-209.115Z" transform="translate(12.346 156.898)" fill="#cdd7d8" stroke="#cdd7d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_589" data-name="パス 589" d="M939.921,454.838c44.366,44.362,143.667,88.051,208.446,85.942V245.723Z" transform="translate(46.012 156.898)" fill="#cdd7d8" stroke="#cdd7d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_590" data-name="パス 590" d="M1039.44,245.723l.3,295.578c13.318,1.838-.218-.6,0,0A293.854,293.854,0,0,0,1204.8,490.882Z" transform="translate(154.94 156.898)" fill="#87c2c4" stroke="#87c2c4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

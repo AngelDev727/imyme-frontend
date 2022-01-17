@@ -1,0 +1,3 @@
+.answer--input:not([type="checkbox"]) {
+  height: 1.8em;
+}

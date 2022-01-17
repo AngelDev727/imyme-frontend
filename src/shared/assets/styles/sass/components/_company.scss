@@ -1,0 +1,23 @@
+.company-info {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+
+    &>:nth-child(2n+1) {
+        align-self: center;
+        margin-left: 2rem;
+    }
+    &>:nth-child(2n+2) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-self: center;
+    }
+    
+}
+
+.terms-list {
+    list-style: unset;
+}
+
+.half {
+    width: 49% !important;
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    // @media only screen and (min-width: $bp-small) {
+    //     font-size: 95%;
+    // }
+    // @media only screen and (min-width: $bp-large) {
+    //     font-size: 100%;
+    // }
+    @media only screen and (min-width: $bp-largest) {
+        font-size: 80%;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 50%;
+    }
+    @media only screen and (max-width: 350px) {
+        font-size: 40%;
+    }
+}
+
+a,a:link {
+    text-decoration: none;
+    color: rgba($text-normal, 1);
+
+    &:hover,&:visited {
+        color: rgba($text-normal, .5);
+    }
+
+    &.btn {
+        color: rgba($text-white, .9);
+    }
+}
+
+body {
+    font-family: 'itc-avant-garde-gothic-pro','FOT-筑紫ゴシック Pr5 M', 'Open Sans', sans-serif;
+    font-weight: 200;
+    line-height: normal;
+    color: $text-normal;
+    background-color: $color-white;
+    height: 100vh;
+    // max-width: 900px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3.75em;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2.3em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    font-weight: 200;
+    transition: transform .2s ease;
+    transform: scale(1);
+}
+
+button:active:not(:disabled) {
+    transform: scale(.95);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px darkgrey inset;
+}
+
+section {
+    margin: 2rem 1.5rem 3rem;
+    background-color: $color-gray;
+}
+
+input {
+    border-radius: 0;
+}
+
+small {
+    font-size: .8em;
+}
+
+label { 
+    cursor: pointer;
+    user-select: none;
+}
+
+iframe {
+    border: none;
+}

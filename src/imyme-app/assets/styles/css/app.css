@@ -1,0 +1,125 @@
+.answer--section-image {
+  height: 75vh;
+  margin-bottom: 1%;
+}
+.answer--section-image .answers.q-15 {
+  border-radius: unset;
+}
+.answer--section-image .answers.q-15.answers-name {
+  border-radius: 8px;
+}
+
+.answer--section {
+  margin-top: 4rem;
+}
+
+.answer--input:not([type="checkbox"]) {
+  font-size: 2.8em;
+  height: 2.0em;
+  padding: 1%;
+}
+
+.question-action-buttons {
+  margin-bottom: 5%;
+  margin-top: 8%;
+  top: initial;
+}
+.question-action-buttons button {
+  margin-top: 0;
+}
+
+.matching-button--text-small {
+  font-size: 0.6em;
+}
+
+.btn-circle {
+  position: relative;
+  bottom: 0;
+  left: -40px;
+}
+
+.top--img {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  min-height: unset;
+  opacity: 0.5;
+  position: inherit;
+}
+.top--philosophy {
+  height: 100%;
+}
+
+.navbar--dropdown {
+  top: 65px
+}
+
+/* top page style */
+.navbar,
+.top-page,
+.footer--section {
+  color: #111111;
+  font-family: 'brandon-grotesque', 'Segoe UI', '游ゴシック Medium', 'Yu Gothic Medium', YuGothic, '游明朝', '游明朝体', 'Yu Mincho', YuMincho, sans-serif;
+  font-feature-settings: 'palt';;
+}
+.top-page,
+.top-page section,
+.footer--section {
+  background-color: #f8f4ef;
+}
+.top-page > section:not(:last-child) {
+  margin: 0 10%;
+  width: 80%;
+}
+.top-page a,
+.top-page a:visited {
+  color: #111111;
+  text-decoration: none;
+}
+.top-page a:hover {
+  color: #888888;
+  text-decoration: underline;
+}
+.top-page h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.top-page h2,
+.footer--section h2{
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+.top-page h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.top-page h4,
+.top-page h5 {
+  font-weight: 500;
+}
+.top-page p {
+  font-size:14px;
+}
+.top-page .sub-title {
+  font-size: 16px;
+  color: #333333;
+  text-transform: none;
+}
+@media only screen and (max-width: 768px) {
+  .top-page > section:not(:last-child) {
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+
+.q-and-a-heading {
+  width: 26em;
+}
+
+.checkmark {
+  top: 50%;
+  transform: translateY(-50%);
+}

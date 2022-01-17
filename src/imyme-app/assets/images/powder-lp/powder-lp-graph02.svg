@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="592.111" height="922.635" viewBox="0 0 592.111 922.635">
+  <g id="コンポーネント_32_1" data-name="コンポーネント 32 – 1" transform="translate(0.6 0.824)">
+    <g id="グループ_452" data-name="グループ 452" transform="translate(-604.554 -414.277)">
+      <path id="パス_580" data-name="パス 580" d="M1195.458,664.45c0,163.174-132.277,293.746-295.451,293.746S604.554,825.919,604.554,662.746a294.084,294.084,0,0,1,40.1-148.712L900.005,667.862l295.453-3.412" transform="translate(0 78.14)" fill="#97c487" stroke="#97c487" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_581" data-name="パス 581" d="M742.678,445.432V746l295.453-3.412C1038.131,579.416,905.854,445.432,742.678,445.432Z" transform="translate(157.327 0)" fill="#8bb27c" stroke="#8bb27c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_582" data-name="パス 582" d="M729.329,464.346A296.937,296.937,0,0,0,623.3,570.63L878.653,724.458Z" transform="translate(21.352 21.544)" fill="#97c487" stroke="#97c487" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_583" data-name="パス 583" d="M757.974,448.7c-30.4,6.738-63.506,20.554-90.283,35.933l154.5,257.638Z" transform="translate(578.284 -314.224) rotate(31)" fill="#c0d5b9" stroke="#c0d5b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_584" data-name="パス 584" d="M712.656,452.431,776.874,746V445.432A296.549,296.549,0,0,0,712.656,452.431Z" transform="translate(123.131 0)" fill="#c0d5b9" stroke="#c0d5b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="パス_591" data-name="パス 591" d="M757.974,448.7a293.63,293.63,0,0,0-85.105,33.459L822.192,742.275Z" transform="translate(77.813 3.727)" fill="#97c487" stroke="#97c487" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+    <rect id="長方形_2590" data-name="長方形 2590" width="56" height="56" transform="translate(68 697.811)" fill="#97c487"/>
+    <rect id="長方形_2591" data-name="長方形 2591" width="56" height="56" transform="translate(68 781.811)" fill="#8bb27c"/>
+    <rect id="長方形_2602" data-name="長方形 2602" width="56" height="56" transform="translate(68 865.811)" fill="#c0d5b9"/>
+    <text id="_1週間後_75.0_" data-name="1週間後  (75.0%)" transform="translate(180 710.311)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">1週間後  (75.0%)</tspan></text>
+    <text id="_1ヶ月後_19.0_" data-name="1ヶ月後  (19.0%)" transform="translate(180 794.811)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">1ヶ月後  (19.0%)</tspan></text>
+    <text id="_2週間後_6.0_" data-name="2週間後  (6.0%)" transform="translate(180 878.811)" fill="#4d4d4d" font-size="32" font-family="HiraginoSans-W5, Hiragino Sans" letter-spacing="0.12em"><tspan x="0" y="28" xml:space="preserve">2週間後  (6.0%)</tspan></text>
+  </g>
+</svg>

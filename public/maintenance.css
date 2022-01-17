@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+#maintenance {
+  height: 100vh;
+  text-align: center;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+h1,
+h2,
+p {
+  font-weight: bold;
+}
+.datetime {
+  color: rgb(212, 76, 70);
+}
+p {
+  font-size: 2.3rem;
+}
+html {
+  font-size: 80%;
+}
+@media only screen and (min-width: 75em) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 40%;
+  }
+}

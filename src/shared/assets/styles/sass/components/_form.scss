@@ -1,0 +1,131 @@
+.form{
+    &--title {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+
+    &--label {
+        color: $text-light;
+        letter-spacing: .2rem;
+        font-size: 1.5em;
+        margin-left: 1rem;
+    }
+
+    &--group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > * {
+            width: 49% !important;
+        }
+    }
+
+    &--input:not([type=checkbox]) {
+        border: 0;
+        width: 100%;
+        margin: .5rem 0 1.5rem;
+        height: 4rem;
+        padding: 1rem;
+        color: $text-light;
+        letter-spacing: .2rem;
+        font-size: 1.5em;
+
+        &:focus {
+            background-color: rgb(224, 240, 246);
+            outline: none;
+        }
+
+        &::placeholder {
+            color: lighten($text-light, 35%);
+        }
+
+        [type=textarea] {
+            height: auto;
+        }
+    }
+
+    &--select{
+        // height: 5.4em;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block;
+        background: white;
+        text-align: center;
+        text-align-last: center;
+        // margin-bottom: 1em;
+        border: none;
+
+        select::-ms-expand { display: none; }
+        select{
+            -webkit-appearance: none;
+            appearance: none;
+            border: none;
+            height: 100%;
+            letter-spacing: .5rem;
+            font-size: 3em;
+            font-weight: 100;
+            background: white;
+            padding: 0 1rem !important;
+            margin: 0;
+            box-shadow: none;
+
+            &:-moz-focusring {
+                color: transparent;
+                text-shadow: 0 0 0 #000;
+            }
+
+            &:focus{
+                background: rgba(198, 230, 239, 0.5);
+                border-radius: 0;
+                border: none;
+            }
+        }
+    }
+}
+@-moz-document url-prefix(){
+
+    .form--select select { 
+        width: calc(100% + 15px); 
+        background-position: right 30px center !important; 
+        border: none !important;
+        padding: 0 1rem !important;
+        margin: 0;
+    }
+}
+
+textarea[name=fixed] {
+    resize: none;
+
+    &::placeholder {
+        color: lighten($text-light, 35%);
+    }
+}
+
+/*
+This hides labels from view but allows them
+to still be persent in the dom for screen readers
+*/
+.user-details-label {
+    color: green;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.required-heading {
+    font-size: 2rem;
+    color: #e62477;
+    text-align: center;
+}
+
+.required-icon {
+    font-size: 2rem;
+    color: #e62477;
+}

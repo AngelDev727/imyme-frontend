@@ -1,0 +1,35 @@
+.flex {
+    &-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-center {
+        justify-content: center;
+    }
+
+    &-sb {
+        justify-content: space-between;
+    }
+
+    &-se {
+        justify-content: space-evenly;
+    }
+
+    &-ai {
+        align-items: center;
+    }
+
+    &-item-g {
+        flex-grow: 1;
+    }
+
+    &-item-100 {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "egstaging": "imyme-production"
+  },
+  "targets": {
+    "imyme-production": {
+      "hosting": {
+        "tablet": [
+          "imyme-production-tablet"
+        ],
+        "app": [
+          "imyme-production"
+        ],
+        "tokyu-signage": [
+          "imyme-production-tokyu-signage"
+        ]
+      }
+    }
+  }
+}

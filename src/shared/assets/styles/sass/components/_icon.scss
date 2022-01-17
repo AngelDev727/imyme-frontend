@@ -1,0 +1,270 @@
+.icon-fill {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    stroke-width: 0;
+    fill: $color-white;
+}
+
+.icon-fill-light {
+    fill: $color-social !important;
+}
+
+.fill-current {
+    fill: currentColor;
+}
+
+.icon-stroke {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    stroke-width: .2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: currentColor;
+    fill: none;
+}
+
+.icon-xl, .icon-group-xl >.icon-fill,.icon-group-xl >.icon-stroke {
+    width: 22em;
+    height: 20em;
+    margin: -4em;
+    stroke-width: .1px;
+}
+
+.icon-lg, .icon-group-lg >.icon-fill,.icon-group-lg >.icon-stroke {
+    width: 20em;
+    height: 20em;
+    margin: -3em;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 11em;
+        height: 15em;
+        margin: -2em;
+    }
+
+}
+
+.icon-md, .icon-group-md >.icon-fill,.icon-group-md >.icon-stroke {
+    width: 16em;
+    height: 16em;
+    margin: -2em;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 11em;
+        height: 11em;
+        margin: -2em;
+    }
+}
+
+.icon-sm, .icon-group-sm >.icon-fill,.icon-group-sm >.icon-stroke {
+    width: 5.5em;
+    height: 5.5em;
+    margin: -.5em;
+    stroke-width: .5px;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 3.5em;
+        height: 3.5em;
+        margin: -.75em;
+    }
+}
+
+.icon-top-page, .icon-group-xs >.icon-fill,.icon-group-top-page >.icon-stroke {
+    width: 5em;
+    height: 5em;
+    stroke-width: .75px;
+}
+
+.icon-xs, .icon-group-xs >.icon-fill,.icon-group-xs >.icon-stroke {
+    width: 2.5em;
+    height: 2.5em;
+    stroke-width: .75px;
+}
+
+.icon-skin-type {
+    width: 6.5rem;
+    height: 7rem;
+    stroke-width: .8px;
+    
+    &-side{        
+        margin-right: 0.75rem;
+        margin-left: -1.5rem;
+        margin-top: -1rem;
+    }
+    
+    &-header{
+        margin-bottom: -2rem;
+    }
+
+}
+
+// @media only screen and (min-width: $bp-i-pad-mini){
+//     .icon-skin-type {
+//         width: 3.5rem;
+//         height: 3.6rem;
+//         stroke-width: .8px;
+//         stroke-width: .8px;
+        
+//         &-side{        
+//             margin-right: .25rem;
+//             margin-left: -1rem;
+//         }
+        
+//         &-header{
+//             margin-bottom: -2rem;
+//         }
+//     }
+// }
+
+
+.icon-btn {
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 1.5px;
+    margin-right: -1.5em;
+
+    &:only-child{
+        margin-right: 0;
+    }
+}
+
+.icon-stroke-thin {
+    stroke-width: .1px;
+}
+
+.icon-stroke-bold {
+    stroke-width: .5px;
+}
+
+.icon-stroke-bolder {
+    stroke-width: 1px;
+}
+
+.icon-fit-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    >.icon,>.icon-stroke,>.icon-fill {
+        position: absolute;
+    }
+    .icon-stroke{
+        z-index: 10;
+    }
+
+    &.expand{
+        width: 120%;
+        height: 90%;
+    }
+}
+
+.icon-fit,.icon-fit-container >.icon-fill,.icon-fit-container >.icon-stroke {
+    width: 100%;
+    height: 100%;
+}
+
+.graph {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.graph-i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+    stroke-width: .1px;
+}
+
+.graph-d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.icon-navbar {
+    height: 4.5em;
+    width: 4.5em;
+    fill: none;
+    stroke-width: 1px;
+    stroke: #000000;
+}
+
+.give-height {
+    height: 18em;
+}
+
+.advice-fill {
+    fill: #fcaeb5;
+}
+
+.freshness-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freshness-icon {
+    width: 50%;
+}
+
+.subscription-icon-container {
+    width: 30%;
+}
+
+.icon-example {
+    height: 12em;
+    stroke-width: 0.2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: currentColor;
+    fill: none;
+    margin-bottom: -2em;
+}
+
+.freshness-legend-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-text-test {
+    font-size: 1.2em;
+    fill: black;
+}
+
+.icon-fill-pink {
+    fill: #f7c9cd;
+}
+
+.icon-stroke-white {
+    stroke: white;
+}
+
+.product-drop-temp {
+    height: 100%;
+}
+
+.cart-icon {
+    display: inline-block;
+    stroke-width: 0.2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: currentColor;
+    fill: none;
+    width: 100%;
+    height: 100%;
+}

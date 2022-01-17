@@ -1,0 +1,223 @@
+.top {
+    position: relative;
+
+    &--img {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    &--philosophy {
+        background-image: url(../../images/resized/atari_imyme_oth_philosophy_tabloyd.jpg);
+        background-size: 130%;
+        object-fit: none;
+        background-position: 50% 85%;
+        padding-bottom: 42vw;
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            background-image: url(../../images/atari_imyme_oth_philosophy_tabloyd.jpg);
+            background-position: 50% 88%;
+        }
+        @media only screen and (min-width: $bp-largest) {
+            background-size: 115% auto;
+            background-position: 50% 90%;
+        }
+    }
+
+    &--clean {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/resized/atari_imyme_kv_d_rotated.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 69% 10%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/atari_imyme_kv_d_rotated.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--recipe {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.5), rgba(255,255,255,.75)), url(../../images/resized/atari_imyme_oth_recipe.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 47% 79%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.5), rgba(255,255,255,.75)), url(../../images/atari_imyme_oth_recipe.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--freshness {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/resized/atari_imyme_oth_freshness.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 35% 60%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/atari_imyme_oth_freshness.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--step {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/resized/atari_imyme_kv_c.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/atari_imyme_kv_c.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--time {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/resized/atari_imyme_oth_method.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/atari_imyme_oth_method.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--analyze {
+        &:before {
+            content: "";
+            background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/resized/atari_imyme_oth_analyze.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 35% 30%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                background-image: linear-gradient(0deg,rgba(255,255,255,.25), rgba(255,255,255,.5)), url(../../images/atari_imyme_oth_analyze.jpg);
+            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: $color-black;
+
+        .logo-container {
+            width: 65%;
+
+            .icon {
+                display: inline-block;
+                width: 100%;
+                height: 200px;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke: currentColor;
+                fill: none;
+                stroke-width: .3px;
+
+                &-small {
+                    height: 100px;
+                }
+            }
+        }
+
+        .subsection {
+            display: flex;
+            flex-direction: column;
+            background-color:#ffffff96;
+            width: 100%;
+            @media only screen and (min-width: $bp-i-pad-mini) {
+                padding: 3em;
+            }
+            @media only screen and (min-width: $bp-largest) {
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .clean-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 2em -2em;
+            
+
+            .list-item {
+                width: 45%;
+                background-color: white;
+
+                s {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    &--padding {
+        padding: 15rem 3em;
+
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            padding: 7.2em;
+        }
+    }
+}
+
+.insta-pic {
+    width: 33.333%;
+    padding: 0.5em;
+}
+
+.sticky-bg {
+    position: sticky;
+    top: 0%;
+    height: 100vh !important;
+    background-color: #eff2f7;
+    z-index: 2;
+}
+
+.top {
+    z-index: 5;
+}
+
+.reduce-kerning {
+    margin-left: -.5rem;
+    margin-right: .3rem;
+}

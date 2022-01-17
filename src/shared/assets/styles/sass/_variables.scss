@@ -1,0 +1,51 @@
+//media queries
+$bp-largest:    75em;       //1200px
+$bp-large:      68.75em;    //1100px
+$bp-medium:     56.25em;    //900px
+$bp-small:      43.75em;    //700px
+$bp-smallest:   31.25em;    //500px
+
+//media queries iPhone
+$bp-i-phone-5: 20em;
+$bp-i-phone-6-to-10: 23em;
+$bp-i-phone-plus-models: 25.5em;
+
+$bp-i-pad-mini: 48em;
+$bp-i-pad-pro-105inch: 52em;
+$bp-i-pad-pro-129inch: 64em;
+
+//buttons
+$btn-radius: 5rem;
+$btn-hover: #F3ABAB;
+
+//text color
+$text-normal: rgba(#000,1);
+$text-light: lighten(#666, 20%);
+$text-white: rgba(#fff,.98);
+
+//text size
+
+//text weight
+
+//text line height
+
+//text letter spacing
+
+//colors
+//solid colors
+$color-black:       #000;
+$color-white:       #fff;
+$color-primary:     #fcb5af; //#FCAFB6; //#e29a8f;
+$color-primary-dark: darken($color-primary, 10%);
+$color-gray:        #F1F4F5;
+
+//question gradient
+$color-gradient-start: #FCBAC0;
+$color-gradient-middle: #D6C4FD;
+$color-gradient-end: #C4EBED;
+
+//other colors
+$color-social:      #ECEBED;
+$bg-gray-dark:      #c8c9cb;    //rgb(200,201,203)
+$bg-dark-gray-dark: #b8b9bc;    //rgb(184,185,188)
+$bg-blue-primary: #7fcbd6;

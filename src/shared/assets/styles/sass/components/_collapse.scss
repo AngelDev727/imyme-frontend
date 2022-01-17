@@ -1,0 +1,125 @@
+.collapse-section {
+    display: block;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+.collapse-icon {
+    position: relative;
+    cursor: pointer;
+    height: 3em;
+    min-width: 3em;
+
+    .bar {
+        position: absolute;
+        height: 2px;
+        top:50%;
+        left:50%;
+        transition: all 0.25s ease;
+        transform-origin: 50% 50%;   
+        border-radius: 5rem;     
+    }
+
+    &.menu {
+        .bar {
+            opacity: 1;
+            width: 100%;
+            max-width: 3em;
+            background-color: $color-black;
+
+            &:first-child {
+                transform: translate(-50%,0%);
+                top: 10%;
+            }
+
+            &:last-child {
+                transform: translate(-50%,0%);
+                top: 70%;
+            }
+        }
+    }
+
+    &.arrow {
+        .bar {
+            opacity: 0;
+            width: 100%;
+            max-width: 2em;
+            background-color: $text-light;
+
+            &:first-child {
+                opacity: 1;
+                transform: translate(-90%,0%) rotate(45deg);
+                top: 50%;
+            }
+    
+            &:last-child {
+                opacity: 1;
+                transform: translate(-20%,0%) rotate(-45deg);
+                top: 50%;
+            }
+        }
+    }
+
+    &.arrow-r {
+        .bar {
+            opacity: 0;
+            width: 100%;
+            max-width: 2em;
+            background-color: $text-light;
+
+            &:first-child {
+                opacity: 1;
+                transform: translate(-50%,0%) rotate(-45deg);
+                top: 56%;
+            }
+    
+            &:last-child {
+                opacity: 1;
+                transform: translate(-50%,0%) rotate(45deg);
+                top: 30%;
+            }
+        }
+    }
+
+    &.arrow-up {
+        .bar {
+            opacity: 0;
+            width: 100%;
+            max-width: 2em;
+            background-color: $text-light;
+
+            &:first-child {
+                opacity: 1;
+                transform: translate(-90%,0%) rotate(-45deg);
+                top: 50%;
+            }
+    
+            &:last-child {
+                opacity: 1;
+                transform: translate(-20%,0%) rotate(45deg);
+                top: 50%;
+            }
+        }
+    }
+
+    &.cross {
+        .bar {
+            opacity: 0;
+            width: 100%;
+            max-width: 3em;
+            background-color: $text-light;
+
+            &:first-child {
+                opacity: 1;
+                transform: translate(-50%,0%) rotate(45deg);
+                top: 50%;
+            }
+    
+            &:last-child {
+                opacity: 1;
+                transform: translate(-50%,0%) rotate(-45deg);
+                top: 50%;
+            }
+        }
+    }
+}

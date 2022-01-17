@@ -1,0 +1,54 @@
+//common
+@import "src/shared/assets/styles/sass/variables.scss";
+@import "src/shared/assets/styles/sass/reset/base.scss";
+
+@import "src/shared/assets/styles/sass/components/icon.scss";
+@import "src/shared/assets/styles/sass/components/icons-animated.scss";
+@import "src/shared/assets/styles/sass/components/navbar.scss";
+@import "src/shared/assets/styles/sass/components/collapse.scss";
+@import "src/shared/assets/styles/sass/components/question.scss";
+@import "src/shared/assets/styles/sass/components/result.scss";
+@import "src/shared/assets/styles/sass/components/btn.scss";
+@import "src/shared/assets/styles/sass/components/form.scss";
+@import "src/shared/assets/styles/sass/components/animation.scss";
+@import "src/shared/assets/styles/sass/components/error.scss";
+@import "src/shared/assets/styles/sass/components/essence.scss";
+@import "src/shared/assets/styles/sass/components/philosophy.scss";
+@import "src/shared/assets/styles/sass/components/how-to-section.scss";
+@import "src/shared/assets/styles/sass/components/product-grid.scss";
+@import "src/shared/assets/styles/sass/components/skin-type.scss";
+@import "src/shared/assets/styles/sass/components/history.scss";
+@import "src/shared/assets/styles/sass/components/subscription.scss";
+
+
+//phone
+@import "src/shared/assets/styles/sass/components/hero.scss";
+@import "src/shared/assets/styles/sass/components/cart.scss";
+@import "src/shared/assets/styles/sass/components/summary.scss";
+@import "src/shared/assets/styles/sass/components/social-section.scss";
+@import "src/shared/assets/styles/sass/components/faq.scss";
+// @import "src/shared/assets/styles/sass/components/you-your-you.scss";
+@import "src/shared/assets/styles/sass/components/company.scss";
+@import "src/shared/assets/styles/sass/components/life-balance.scss";
+@import "src/shared/assets/styles/sass/components/blog.scss";
+@import "src/shared/assets/styles/sass/components/footer.scss";
+@import "src/shared/assets/styles/sass/components/stripe-customize.scss";
+
+//tablet
+// @import "src/shared/assets/styles/sass/components/start.scss";
+// @import "src/shared/assets/styles/sass/components/customizer.scss";
+// @import "src/shared/assets/styles/sass/components/creating.scss";
+// @import "src/shared/assets/styles/sass/components/complete.scss";
+
+//layout
+@import "src/shared/assets/styles/sass/layout/bg.scss";
+@import "src/shared/assets/styles/sass/layout/margin.scss";
+@import "src/shared/assets/styles/sass/layout/padding.scss";
+@import "src/shared/assets/styles/sass/layout/flex.scss";
+@import "src/shared/assets/styles/sass/layout/aspect-ratio.scss";
+@import "src/shared/assets/styles/sass/layout/width.scss";
+@import "src/shared/assets/styles/sass/layout/position.scss";
+
+//theme
+@import "src/shared/assets/styles/sass/theme/text.scss";
+@import "src/shared/assets/styles/sass/theme/radio.scss";

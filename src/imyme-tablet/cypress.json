@@ -1,0 +1,11 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "integrationFolder": "cypress/e2e",
+    "viewportHeight": 1024,
+    "viewportWidth": 768,
+    "env": {
+        "VUE_APP_SHOPIFY_STOREFRONT_API_KEY":"6768e61560abf2bdb0370ff492afd04a",
+        "VUE_APP_API":"imyme-dev.japaneast.cloudapp.azure.com",
+        "VUE_APP_ENV":"development"
+    }
+}

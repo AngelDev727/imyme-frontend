@@ -1,0 +1,39 @@
+@for $i from 1 to 11 {
+    .w-#{$i}0{
+        width: #{$i}0%;
+    }
+}
+
+@for $i from 1 to 10 {
+    .w-center-#{$i}0 {
+        width: #{$i}0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.h-0 {
+    height: 0%;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.max-w {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-page-w {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-page-w-sm {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,47 @@
+.error {
+    align-items: center;
+    background-color: $color-primary;
+    color: $text-white; 
+    display: flex;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 8rem;
+    transition: height 500ms ease;
+    z-index: 500;
+
+    &--message {
+        font-size: 2.2em;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 3rem auto;
+    }
+    
+    &--dismiss-button {
+        background-color: $color-primary;
+        color: $text-white; 
+        font-size: 3.1em;
+        padding: 0 3rem;
+        transition: background-color 300ms ease-in-out;
+
+        &:hover,&:active{
+            background-color: darken($color-primary,10%);
+        }
+    }
+}
+
+.input-err-message {
+    // visibility: hidden;
+    overflow: hidden;
+    background-color: $color-primary;
+    color: $text-white;
+    font-size: 2em;
+    height: 0rem;
+    transition: height 200ms ease;
+}
+
+.stripe-input .field.invalid:not(.empty)+.input-err-message, .input-err.input-err-message{
+    // visibility: visible;
+    height: 2.5rem;
+}

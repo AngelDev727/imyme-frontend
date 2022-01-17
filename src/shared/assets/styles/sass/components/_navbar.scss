@@ -1,0 +1,78 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0);
+    height: 8rem;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background-color 350ms ease;
+    
+    &__tablet {
+        height: 5rem;
+        overflow: hidden;
+    }
+    
+    &--logo {
+        height: 8em;
+        width: 8em;
+
+        &__tablet {
+            height: 16em;
+            width: 16em;
+            margin-top: -5.5rem;
+        }
+    }
+        
+    &--links {
+        display: flex;
+        align-items: center;
+    }
+
+    &--dropdown {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+
+        > * {
+            padding: .5rem 0;
+        }
+    }
+
+    input[type=checkbox]:checked ~ ul {
+        height: 256px;
+    }
+}
+
+.showing-navbar_phone {
+    height: 100%;
+}
+
+.menu-button {
+    font-size: 1.3em !important;
+}
+
+.button__badge {
+    background-color: #fa3e3e;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+    position: absolute;
+    top: 5%;
+    right: -5%;
+}

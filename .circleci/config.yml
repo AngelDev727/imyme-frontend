@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/imyme
+    docker:
+      - image: circleci/node:8.11.3
+    steps:
+      - checkout
+      - run:
+          name: Install deps
+          command: npm install
+      - run:
+          name: Configure env vars
+          command: "./.circleci/prepare-env.sh"
+      - run:
+          name: Build imyme-app
+          command: yarn build:app
+      - run:
+          name: Build imyme-tablet
+          command: yarn build:tablet
+      - run:
+          name: Japanese font quickfix
+          command: |
+            sed -i'' -e 's/FOT-\\7B51\\7D2B\\30B4\\30B7\\30C3\\30AF   Pr5 M/FOT-筑紫ゴシック Pr5 M/g' dist/imyme-app/css/*
+            sed -i'' -e 's/FOT-\\7B51\\7D2B\\30B4\\30B7\\30C3\\30AF   Pr5 M/FOT-筑紫ゴシック Pr5 M/g' dist/imyme-tablet/css/*
+      - deploy:
+          name: Publish
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "develop" ]; then
+              scp -o StrictHostKeyChecking=no -r dist/imyme-app/* isaax@imyme-app-dev.japaneast.cloudapp.azure.com:~/dist/
+              scp -o StrictHostKeyChecking=no -r dist/imyme-tablet/* isaax@imyme-tablet-dev.japaneast.cloudapp.azure.com:~/dist/
+            fi
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              scp -o StrictHostKeyChecking=no -r dist/* imyme@imyme.japaneast.cloudapp.azure.com:~/
+            fi
+

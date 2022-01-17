@@ -1,0 +1,57 @@
+.customize-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $bg-dark-gray-dark;
+    padding: .2em;
+    border-radius: 27px;
+}
+
+.customize-toggle input{
+    position: absolute;
+    opacity: 0;
+}
+
+.customize-circle{
+    display: block;
+    border-radius: 27px;
+    background-color: transparent;
+    transition: background-color 300ms ease;
+    z-index: 100;
+}
+
+input[type=radio]:checked + .customize-circle {
+    background-color: $bg-blue-primary;
+}
+
+.customize-circle-sm{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: $bg-dark-gray-dark;
+}
+
+.customize-circle-md{
+    width: 3.5rem;
+    height: .7rem;
+}
+
+.customize-circle-lg{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: $bg-dark-gray-dark;
+}
+
+.customize-fill{
+    height: .2rem;
+    background-color: $color-primary;
+    z-index: 50;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}

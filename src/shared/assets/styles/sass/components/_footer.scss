@@ -1,0 +1,19 @@
+.footer-section {
+    background-color: #888889;
+}
+
+.footer-text,
+.footer-link:link,
+.footer-link:any-link {
+    font-size: 1.2rem;
+    letter-spacing: 0.7ch;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 100;
+}
+
+.footer-text-romaji {
+    font-size: 1rem;
+    letter-spacing: 0.5ch;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 200;
+}

@@ -1,0 +1,194 @@
+.text-red {
+    //red looks thicker so change font weight
+    color: $color-primary;
+    font-weight: 200;
+}
+.text-deep-red {
+    color: red;
+}
+
+.text-light {
+    color: $text-light;
+}
+
+.text-black {
+    color: $color-black;
+}
+
+.text-scale-150 {
+    font-size: 150%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.ls-1 {
+    letter-spacing: .1em;
+}
+
+.ls-2 {
+    letter-spacing: .2em;
+}
+
+.lh-1{
+    line-height: 1.4em !important;
+}
+
+.lh-2{
+    line-height: 2.4em;
+}
+
+//text sizes
+
+.text{
+    &-heading{
+        &-large {
+            font-size: 5.6em;
+            font-weight: 300;
+            letter-spacing: .15ch;
+        }
+
+        &-regular {
+            font-size: 5em;
+            font-weight: 300;
+            letter-spacing: .15ch;
+        }
+
+        &-small {
+            font-size: 4em;
+            font-weight: 300;
+            letter-spacing: .2ch;
+        }
+    }
+
+    &-subheading{
+        font-size: 2.8em;
+        line-height: normal;
+        word-break: keep-all;
+    }
+
+    &-large{
+        font-size: 2em;
+    }
+
+    &-mid{
+        font-size: 1.5em;
+    }
+    
+    &-regular{
+        font-size: 1.6em;
+        line-height: 2.4em;
+        font-size: 1.75em;
+        line-height: 2.15em;
+    }
+
+    &-answer{
+        font-size: 1.4em;
+        line-height: 1.4em;
+        text-align: center;
+
+        &-center {
+            margin: auto;
+        }
+    }
+    
+    &-small{
+        font-size: 1.2em;
+    }
+    
+    &-tiny{
+        font-size: .9em;
+    }
+
+    &-underlined {
+        text-decoration-skip: skip;
+        text-decoration-line: underline;
+    }
+
+    &-product-description {
+        line-height: 1.8em;
+        font-size: 1.6em;
+    }
+
+    &-essence-description {
+        line-height: 1.4em;
+        font-size: 1.2em;
+    }
+
+    &-philosophy {
+        font-size: 1.8em;
+        line-height: 1.85em;
+        max-width: 800px;
+
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            font-size: 1.35em;
+            line-height: 2.2em;
+        }
+    }
+
+    &-philosophy-subsection {
+        font-size: 1.65em;
+        line-height: 1.75em;
+
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            font-size: 1.15em;
+            line-height: 2.3em;
+        }
+    }
+
+    &-philosophy-subsection-heading {
+        font-size: 1.85em;
+        line-height: 1.75em;
+        margin-bottom: 1em;
+
+        @media only screen and (min-width: $bp-i-pad-mini) {
+            font-size: 1.45em;
+        }
+    }
+
+    &-news-article, &-news-article * {
+        font-size: 1.6rem;
+        margin-bottom: .1em;
+    }
+
+    &-faq {
+        font-size: 1.5em;
+        line-height: 1.75em;
+        letter-spacing: .1ch;
+        white-space: pre-line;
+    }
+
+    &-summary-button {
+        font-size: 0.8em;
+    }
+
+    &-contact {
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
+    &-unsubscribe-confirmation {
+        font-size: 1.6em;
+    }
+}
